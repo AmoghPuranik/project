@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'D:\fyp\PharmaSecure-master\files\static\files\style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <style>
+        body{background:url("{% static 'D:\fyp\PharmaSecure-master\files\static\files\images\pswp.jpg' %}");}
+    </style>
+  </head>
+  <body>
+    <header>
+        <!--<img src="{% static 'C:\Users\anjan\Downloads\PharmaSecure-master\files\static\files\images\pswp.jpg' %}"/>-->
+      <nav>
+        <img src="{% static 'D:\fyp\PharmaSecure-master\files\static\files\images\log.jpg' %}" class="brand_logo" alt="Logo" />
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="{% url 'files:manLog' %}">Manager Login</a>
+          <a href="{% url 'files:empLog' %}">Employee Login</a>
+          
+        </div>
+      </nav>
+
+      <main>
+        <section>
+          <h3>PHARMACY SECURITY</h3>
+          <h1>
+            SECURE YOUR <span class="change_content"> </span>
+            <span style="margin-top: -10px"> | </span>
+          </h1>
+          <p>
+            "Concentrating on this serious threat Pharma Prudent seeks to address this problem by using transparent data encryption."
+          </p>
+          <a href="{% url 'files:abt' %}" class="btnone">learn more</a>
+          <a href="{% url 'files:manReg' %}" class="btntwo">Manager Reg</a>
+        </section>
+      </main>
+    </header>
+  </body>
+</html>

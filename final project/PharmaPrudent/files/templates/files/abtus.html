@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'D:\fyp\PharmaSecure-master\files\static\files\abtus.css' %}"/>
+	<style>
+        body{background:url("{% static 'D:\fyp\PharmaSecure-master\files\static\files\images\pswp.jpg' %}");}
+    </style>	
+</head>
+<body>
+	<div class="background-img"></div>
+	<div class="slider">
+		<div class="slide" id="slide1">
+			<header>
+				<nav>
+					<div class="menu">
+					  <a href="{% url 'files:main' %}">Home</a>
+					</div>
+				  </nav>
+			
+				<h1>About Us</h1>
+			</header>
+			<main>
+				<section>
+                    <h2>
+					<p>"Pharma Prudent" is a secure system designed to protect the priceless pharmaceutical assets </p>
+                    <p>kept in the database.One of the cryptographic techniques is homomorphic encryption, which </p>
+                    <p>data to be changed while it is encrypted without having to first decrypt it. To protect </p>
+                    <p> data, Pharma Prudent employs homomorphic encryption techniques.</p>
+                    </h2>
+				</section>
+			</main>
+		</div>
+		<div class="slide" id="slide2">
+			<header>
+				<h1>Our Team</h1>
+			</header>
+			<main>
+				<section>
+                    <h2>          
+                    <ul>
+                        <li>Ameesha     <br> 4MT19CS019</li><br>
+                        <li>Amogh Puranik  <br>4MT19CS020</li><br>
+                        <li>Anjani J       <br>4MT19CS024</li><br>
+                        <li>Ashish U Shetty <br> 4MT19CS031</li><br>
+                    </ul>
+                    </h2>
+                </section>
+			</main>
+		</div>
+        <div class="slide" id="slide2">
+			<header>
+				<h1>Our Mission</h1>
+			</header>
+			<main>
+				<section>
+                    <h2> 
+                    <p>The goal is to provide a secure system for storing important data.</p>
+                    <p>The created solution stops data leaking inside the company.The suggested </p>
+                    <p>approach the homomorphic manipulation of pharmaceutical data. Enables </p>
+                    <p>the opening of an encrypted file using a runtime key, and safeguards </p>
+                    <p>keys by keeping  them in a file and encrypting them.</p>
+                    </h2>
+                </section>
+			</main>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
